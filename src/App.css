@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+
+
+}
+
+body{
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+
+
+  min-height: 100vh;
+
+
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header{
+  text-align: center;
+  margin: 20px 0;
+  font-family: 'Segoe UI', 'Lucida Sans', 'Lucida Grande', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00ffc3; /* Cool neon green */
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px rgba(0, 255, 195, 0.6);
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.table-container {
+  width: 90%;
+  margin: 2rem auto;
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.05); /* Slight transparency */
+  color: #f1f1f1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 12px;
+  overflow: hidden;
+}
+thead{
+  background: rgba(255, 255, 255, 0.1);
+}
+img{
+  width: 50px;
+  height: 50px;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+th {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #00ffc3;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  transition: background-color 0.3s ease;
+}
+td {
+  font-size: 0.95rem;
+}
+
+@media screen and (max-width: 768px) {
+  table {
+    font-size: 0.85rem;
+  }
+
+  th, td {
+    padding: 0.7rem;
+  }
+}
+
+
